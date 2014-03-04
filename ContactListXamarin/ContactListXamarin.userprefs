@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContactListXamarin\MainActivity.cs">
+    <Files>
+      <File FileName="ContactListXamarin\MainActivity.cs" Line="41" Column="4" />
+      <File FileName="ContactListXamarin\Resources\values\Strings.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ContactListXamarin AndroidDeviceId-Release="4df15ae665105f59" />
+</Properties>
