@@ -58,9 +58,15 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FooContainer.cs" />
+    <Compile Include="ITest.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test1.cs" />
+    <Compile Include="Test2.cs" />
+    <Compile Include="Test3.cs" />
+    <Compile Include="TestExecuter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\data.dat" />

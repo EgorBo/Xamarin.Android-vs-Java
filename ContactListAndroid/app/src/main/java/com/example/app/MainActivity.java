@@ -2,10 +2,11 @@ package com.example.app;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import java.io.IOException;
-import java.io.InputStream;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,14 +17,18 @@ public class MainActivity extends Activity {
     final String ATTRIBUTE_NAME_PHONE = "phone";
     final String ATTRIBUTE_NAME_IMAGE = "image";
 
+    private long startTime = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] texts = LoadData("data.dat").split("\n");
+        // FILLING LIST
+        String[] texts = new String[1000];
         String[] numbers = new String[texts.length];
         for (int i =0; i<texts.length; i++) {
+            texts[i] = "Ivan Ivanov" + i;
             numbers[i] = "+375(55)1112222 " + i;
         }
 
@@ -45,18 +50,24 @@ public class MainActivity extends Activity {
         list.setAdapter(adapter);
     }
 
-    public String LoadData(String inFile) {
-        String tContents = "";
-        try {
-            InputStream stream = getAssets().open(inFile);
-            int size = stream.available();
-            byte[] buffer = new byte[size];
-            stream.read(buffer);
-            stream.close();
-            tContents = new String(buffer);
-        } catch (IOException e) {
-            // Handle exceptions here
-        }
-        return tContents;
+
+    public void Test1(View view) {
+        String result = new TestExecuter().Run(new Test1());
+        PrintResults(result);
+    }
+
+    public void Test2(View view) {
+        String result = new TestExecuter().Run(new Test2());
+        PrintResults(result);
+    }
+
+    public void Test3(View view) {
+        String result = new TestExecuter().Run(new Test3(this));
+        PrintResults(result);
+    }
+
+    private void PrintResults(String result) {
+        TextView resultTv = (TextView)findViewById(R.id.result);
+        resultTv.setText(result);
     }
 }
