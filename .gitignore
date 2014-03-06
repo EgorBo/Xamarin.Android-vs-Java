@@ -27,3 +27,4 @@ proguard/
 *.ipr
 *.iws
 .idea/
+ContactListMvvmCross/ContactListMvvmCross/obj/Release/android/assets/Cirrious.MvvmCross.Localization.dll

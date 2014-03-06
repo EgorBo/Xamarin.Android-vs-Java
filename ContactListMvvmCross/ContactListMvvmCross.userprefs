@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContactListMvvmCross/Test1.cs">
+    <Files>
+      <File FileName="ContactListMvvmCross/MainActivity.cs" Line="34" Column="1" />
+      <File FileName="ContactListMvvmCross/Resources/values/MvxBind.xml" Line="11" Column="47" />
+      <File FileName="ContactListMvvmCross/Setup.cs" Line="30" Column="35" />
+      <File FileName="ContactListMvvmCross/MainViewModel.cs" Line="84" Column="9" />
+      <File FileName="ContactListMvvmCross/TestExecuter.cs" Line="12" Column="27" />
+      <File FileName="ContactListMvvmCross/Test3.cs" Line="13" Column="10" />
+      <File FileName="ContactListMvvmCross/Test1.cs" Line="22" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ContactListMvvmCross MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Release="emulator-5554" />
+</Properties>
