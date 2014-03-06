@@ -1,4 +1,9 @@
-Xamarin.Android-vs-Java
+Xamarin.Android vs Dalvik (or ART) test
 =======================
 
-Want to find out the difference between Xamarin and Java performance (start up time, math, etc)
+Tests:
+1) Start up time
+2) Smooth scrolling
+3) Arithmetic test
+4) Collections, generics, custom value types
+5) Strings 
