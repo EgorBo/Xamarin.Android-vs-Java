@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/ContactListMvvmCross.ContactListMvvmCross"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -12,11 +13,12 @@
         android:layout_alignParentLeft="true"
         android:layout_marginRight="5dip"
         android:padding="3dip">
-        <ImageView
+        <BindImageView
             android:id="@+id/tvImage"
             android:contentDescription="@string/app_name"
             android:layout_width="50dip"
             android:layout_height="50dip"
+            local:MvxBind="Res ['image']"
             android:src="@drawable/xamarin" />
     </LinearLayout>
     <TextView
@@ -28,6 +30,7 @@
         android:layout_centerVertical="false"
         android:paddingBottom="0dip"
         android:text="Ivan Ivanov"
+        local:MvxBind="Text ['name']"
         android:textColor="#040404"
         android:textSize="25dip"
         android:textStyle="bold"

@@ -24,11 +24,21 @@ namespace ContactListMvvmCross
 
             set
             {
-                SetContentView(Resource.Layout.Main);
                 base.ViewModel = value;
-
             }
         }
+
+        protected override void OnViewModelSet()
+        {
+            base.OnViewModelSet();
+            SetContentView(Resource.Layout.Main);
+        }
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+        }
+        
 
     }
 }

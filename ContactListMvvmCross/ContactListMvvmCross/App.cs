@@ -10,11 +10,15 @@ using Android.Views;
 using Android.Widget;
 using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
+using Cirrious.CrossCore;
 
 namespace ContactListMvvmCross
 {
 	public class App : MvxApplication
 	{
+        public App(){
+            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<MainViewModel>());
+        }
 
 	}
 }

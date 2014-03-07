@@ -23,17 +23,16 @@
         <TableRow>
             <TextView
                 android:id="@+id/result"
-                local:MvxBind="Result"
+                local:MvxBind="Text Result"
                 android:layout_span="3" />
         </TableRow>
     </TableLayout>
-    <ListView
+    <MvxListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="#b5b5b5"
         android:dividerHeight="1dp"
-        android:background="#f00"
         local:MvxItemTemplate="@layout/item_row"
-        local:MvxBind="ItemsSources Data" />
+        local:MvxBind="ItemsSource Data" />
 </LinearLayout>

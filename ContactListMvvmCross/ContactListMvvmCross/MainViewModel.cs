@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Android.Runtime;
 using ContactListXamarin;
 using Cirrious.CrossCore.Droid.Platform;
+using Android.Widget;
 
 namespace ContactListMvvmCross
 {
@@ -17,7 +18,22 @@ namespace ContactListMvvmCross
 
         string _result;
 
-        public IList Data { get; set; }
+        List<IDictionary<String, Object>> data;
+
+        public List<IDictionary<String, Object>> Data 
+        { 
+            get 
+            {
+                return data;
+            }
+
+            set
+            {
+                data = value;
+                RaisePropertyChanged(() => Data);
+            }
+           
+        }
 
         public string Result
     {
@@ -36,7 +52,8 @@ namespace ContactListMvvmCross
         public override void Start()
         {
             base.Start();
-            
+
+
             var texts = new String[1000];
             var numbers = new String[texts.Length];
             for (int i = 0; i < texts.Length; i++)
@@ -45,7 +62,9 @@ namespace ContactListMvvmCross
                 numbers[i] = "+375(55)1112222 " + i.ToString(CultureInfo.InvariantCulture);
             }
 
-            var data = new List<IDictionary<String, Object>>(texts.Length);
+
+
+            data = new List<IDictionary<String, Object>>(texts.Length);
             for (int i = 0; i < texts.Length; i++)
             {
                 var m = new JavaDictionary<String, Object>();
@@ -53,13 +72,17 @@ namespace ContactListMvvmCross
                 m[ATTRIBUTE_NAME_PHONE] = numbers[i];
                 m[ATTRIBUTE_NAME_IMAGE] = i % 2 == 0 ? Resource.Drawable.xamarin : Resource.Drawable.ic_launcher;
                 data.Add(m);
+
+
+
+
             }
 
-            Data = data;
+
             RaisePropertyChanged(() => Data);
 
-//            String[] from = { ATTRIBUTE_NAME_NAME, ATTRIBUTE_NAME_PHONE, ATTRIBUTE_NAME_IMAGE };
-//            int[] to = { Resource.Id.tvName, Resource.Id.tvNumber, Resource.Id.tvImage };
+            String[] from = { ATTRIBUTE_NAME_NAME, ATTRIBUTE_NAME_PHONE, ATTRIBUTE_NAME_IMAGE };
+            int[] to = { Resource.Id.tvName, Resource.Id.tvNumber, Resource.Id.tvImage };
         }
 
         public void Test1(object sender, EventArgs eventArgs)
