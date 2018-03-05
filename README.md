@@ -1,4 +1,4 @@
-Xamarin.Android vs Dalvik (or ART) test (as of 2014)
+Xamarin.Android vs Java tests (as of 2014)
 =======================
 
 *Numbers are milliseconds.
