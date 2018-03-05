@@ -1,8 +1,7 @@
-Xamarin.Android vs Dalvik (or ART) test
+Xamarin.Android vs Dalvik (or ART) test (as of 2014)
 =======================
 
 *Numbers are milliseconds.
-
 
 **1. Arithmetic test**
 
@@ -18,7 +17,7 @@ Xamarin.Android vs Dalvik (or ART) test
 
 ![alt text](http://habrastorage.org/getpro/habr/post_images/03e/d4a/4eb/03ed4a4eb211d1969f05db45ba7b4f4d.png)
 
-**UPD MARCH 2018:**
+# **UPD MARCH 2018:**
 
 ![2018](https://habrastorage.org/webt/ep/0d/vy/ep0dvy_i8x7_izds1588gynqdhw.png)
 
