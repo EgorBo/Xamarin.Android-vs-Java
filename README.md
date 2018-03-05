@@ -27,6 +27,6 @@ Xamarin Android: 4.14mb (arm-v8, Link-all, Proguard)
 
 **4. Cold start time**
 
-~0.5ms
+~0.5s
 
 [![alt text](http://img.youtube.com/vi/RV-aWSfVzWw/0.jpg)](https://www.youtube.com/watch?v=RV-aWSfVzWw)
