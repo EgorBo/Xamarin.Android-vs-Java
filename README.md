@@ -19,10 +19,13 @@ Xamarin.Android vs Dalvik (or ART) test
 ![alt text](http://habrastorage.org/getpro/habr/post_images/03e/d4a/4eb/03ed4a4eb211d1969f05db45ba7b4f4d.png)
 
 **UPD MARCH 2018:**
+
 ![2018](https://habrastorage.org/webt/ep/0d/vy/ep0dvy_i8x7_izds1588gynqdhw.png)
 
 **4. APK size**
+
 Xamarin Android: 4.14mb (arm-v8, Link-all, Proguard)
 
 **4. Cold start time**
+
 [![alt text](http://img.youtube.com/vi/RV-aWSfVzWw/0.jpg)](https://www.youtube.com/watch?v=RV-aWSfVzWw)
