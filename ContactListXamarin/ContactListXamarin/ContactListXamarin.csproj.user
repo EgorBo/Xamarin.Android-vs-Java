@@ -2,5 +2,6 @@
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>3.7in WVGA %28Nexus One%29</AndroidDesignerPreferredDevice>
+    <SelectedDevice>Google Pixel 2</SelectedDevice>
   </PropertyGroup>
 </Project>
